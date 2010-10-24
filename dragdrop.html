@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>ドラッグサンプル</title>
+// 1. ドラッグ対象となるオブジェクトのCSS
+<style type="text/css">
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red
+}
+</style>
+
+// 2. jQuery、jQueryUIライブラリのロード
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+<script type="text/javascript">
+// 3. draggableメソッドの使用例
+<!--
+$(function () {
+  $("#square").draggable();
+});
+//-->
+</script>
+
+  </head>
+// 4. ドラッグ要素の指定
+  <body>
+    <h1 id="title">ドラッグ＆ドロップサンプル</h1>
+    <div id="square" class="square">マウスでドラッグし、移動させてください</div>
+  </body>
+</html>
